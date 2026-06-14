@@ -1,0 +1,3 @@
+[<SLASH>home<SLASH>user<SLASH>Instrument_Cluster]
+importPaths="/home/user/Instrument_Cluster/build/Desktop-Debug:/home/user/Instrument_Cluster/build/Desktop-Debug/Instrument_Cluster:/usr/lib/qt6/qml"
+resourceFiles="/home/user/Instrument_Cluster/build/Desktop-Debug/.qt/rcc/qmake_Instrument_Cluster.qrc:/home/user/Instrument_Cluster/build/Desktop-Debug/.qt/rcc/appInstrument_Cluster_raw_qml_0.qrc"

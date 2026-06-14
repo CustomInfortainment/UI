@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appInstrument_Cluster_FILE /home/user/Instrument_Cluster/build/Desktop-Debug/appInstrument_Cluster)
+set(__QT_DEPLOY_TARGET_appInstrument_Cluster_TYPE EXECUTABLE)

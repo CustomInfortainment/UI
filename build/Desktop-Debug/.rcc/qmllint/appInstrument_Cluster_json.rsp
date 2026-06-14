@@ -1,0 +1,16 @@
+--bare
+-I
+/home/user/Instrument_Cluster/build/Desktop-Debug
+-I
+/home/user/Instrument_Cluster/build/Desktop-Debug/Instrument_Cluster
+-I
+/home/user/Instrument_Cluster/build/Desktop-Debug
+-I
+/usr/lib/qt6/qml
+--resource
+/home/user/Instrument_Cluster/build/Desktop-Debug/.qt/rcc/qmake_Instrument_Cluster.qrc
+--resource
+/home/user/Instrument_Cluster/build/Desktop-Debug/.qt/rcc/appInstrument_Cluster_raw_qml_0.qrc
+/home/user/Instrument_Cluster/Main.qml
+--json
+/home/user/Instrument_Cluster/build/Desktop-Debug/appInstrument_Cluster_qmllint.json
