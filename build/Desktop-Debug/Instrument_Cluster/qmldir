@@ -1,0 +1,6 @@
+module Instrument_Cluster
+typeinfo appInstrument_Cluster.qmltypes
+prefer :/qt/qml/Instrument_Cluster/
+Main 254.0 Main.qml
+depends QtQuick
+

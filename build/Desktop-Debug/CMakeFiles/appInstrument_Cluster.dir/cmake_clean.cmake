@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  ".qt/rcc/qrc_appInstrument_Cluster_raw_qml_0.cpp"
+  ".qt/rcc/qrc_qmake_Instrument_Cluster.cpp"
+  ".rcc/qmlcache/appInstrument_Cluster_Main_qml.cpp"
+  ".rcc/qmlcache/appInstrument_Cluster_Main_qml.cpp.aotstats"
+  ".rcc/qmlcache/appInstrument_Cluster_qmlcache_loader.cpp"
+  "CMakeFiles/appInstrument_Cluster.dir/link.d"
+  "CMakeFiles/appInstrument_Cluster_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/appInstrument_Cluster_autogen.dir/ParseCache.txt"
+  "appInstrument_Cluster_autogen"
+  "CMakeFiles/appInstrument_Cluster.dir/appInstrument_Cluster_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/appInstrument_Cluster.dir/appInstrument_Cluster_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/appInstrument_Cluster.dir/appinstrument_cluster_qmltyperegistrations.cpp.o"
+  "CMakeFiles/appInstrument_Cluster.dir/appinstrument_cluster_qmltyperegistrations.cpp.o.d"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.qt/rcc/qrc_appInstrument_Cluster_raw_qml_0.cpp.o"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.qt/rcc/qrc_appInstrument_Cluster_raw_qml_0.cpp.o.d"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.qt/rcc/qrc_qmake_Instrument_Cluster.cpp.o"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.qt/rcc/qrc_qmake_Instrument_Cluster.cpp.o.d"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.rcc/qmlcache/appInstrument_Cluster_Main_qml.cpp.o"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.rcc/qmlcache/appInstrument_Cluster_Main_qml.cpp.o.d"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.rcc/qmlcache/appInstrument_Cluster_qmlcache_loader.cpp.o"
+  "CMakeFiles/appInstrument_Cluster.dir/build/Desktop-Debug/.rcc/qmlcache/appInstrument_Cluster_qmlcache_loader.cpp.o.d"
+  "CMakeFiles/appInstrument_Cluster.dir/main.cpp.o"
+  "CMakeFiles/appInstrument_Cluster.dir/main.cpp.o.d"
+  "Instrument_Cluster/appInstrument_Cluster.qmltypes"
+  "appInstrument_Cluster"
+  "appInstrument_Cluster.pdb"
+  "appInstrument_Cluster_autogen/mocs_compilation.cpp"
+  "appInstrument_Cluster_autogen/timestamp"
+  "appinstrument_cluster_qmltyperegistrations.cpp"
+  "meta_types/appInstrument_Cluster_json_file_list.txt"
+  "meta_types/appInstrument_Cluster_json_file_list.txt.timestamp"
+  "meta_types/qt6appinstrument_cluster_metatypes.json"
+  "meta_types/qt6appinstrument_cluster_metatypes.json.gen"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/appInstrument_Cluster.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
