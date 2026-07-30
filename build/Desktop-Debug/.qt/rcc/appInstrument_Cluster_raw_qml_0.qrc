@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Instrument_Cluster/">
-    <file alias="Main.qml">/home/user/Instrument_Cluster/Main.qml</file>
-  </qresource>
-</RCC>
-
