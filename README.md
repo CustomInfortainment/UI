@@ -1,6 +1,44 @@
-## License
-This project is licensed under the MIT License.
+# 차량 인포테인먼트 UI
 
-## Third-party Libraries
-- HardwareSerial - LGPL v2.1 (Espressif arduino-esp32)
-- TWAI Driver - Apache 2.0 (Espressif ESP-IDF)
+## 프로젝트 개요
+- **목적**: 개인 프로젝트 + 취업 대비용
+- **최종 OS**: Arch Linux
+- **디스플레이**: 1개, 16:9 비율 (해상도 미정, 개발 중엔 1920x1080 기준)
+
+## 기능 스코프
+1. 클러스터 (계기판)
+2. 카플레이 / 안드로이드 오토 (CarLinkit 동글 활용)
+3. 블루투스 폰 연동
+4. 차량 상태 정보
+
+## 기술 스택
+- **UI 프레임워크**: Qt / QML (Qt Quick application)
+- **개발 환경**: VS Code + Qt Extension Pack (Qt Creator IDE 대체)
+- **CAN 데이터**: 소켓 기반 랜덤 CAN 프레임 생성 → 추후 SocketCAN 연동으로 확장 가능하게 모듈화
+- **블루투스**: BlueZ + D-Bus (QtDBus)
+- **CarPlay/Android Auto**: CarLinkit 동글 활용 (프로토콜 리버스엔지니어링 배제)
+  - 참고 레퍼런스: FastCarPlay (C++/libusb/SDL2), catplay (Rust), LIVI-CarControl (CAN 연동 포함), pi-carplay
+
+## 아키텍처
+- CarPlay 렌더링은 별도 프로세스로 분리, Qt 메인 UI와는 IPC(공유 메모리/프레임버퍼 전달)로 연결
+- 화면 전환 방식: 완전 전환형 (클러스터/카플레이/블루투스/차량상태가 동등한 화면으로 전환)
+
+## 화면 흐름 (UX)
+- **전환 방식**: 스와이프 제스처
+  - 좌우 스와이프: 클러스터 → 홈 → 카플레이 → 블루투스 → 차량상태 순환 (끝에서 루프)
+  - 아래로 스와이프: 퀵 패널 호출 (밝기, 야간모드, 알림 등)
+
+## 디자인 톤
+- 미정
+
+## 개발 순서
+1. 클러스터 화면 구현
+2. 좌우 스와이프 전환 로직
+3. 카플레이 구현 (CarLinkit 연동)
+4. 블루투스 / 차량상태 화면 (추후)
+
+## 미정 사항
+- [ ] RPM/속도계 배치 스타일 (대칭 듀얼 다이얼 / 속도중심+RPM아크 / 디지털+바그래프 / 3D게이지)
+- [ ] 홈 화면의 역할
+- [ ] 정확한 색상 팔레트 / 타이포그래피
+- [ ] CarPlay 프로세스 ↔ Qt UI 간 정확한 IPC 방식 (하드웨어 확정 후 결정)
