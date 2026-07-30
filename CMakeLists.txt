@@ -16,7 +16,18 @@ qt_add_qml_module(appInstrument_Cluster
     URI Instrument_Cluster
     QML_FILES
         Main.qml
-        QML_FILES ClusterScreen.qml
+        QML_FILES
+        QML_FILES Cell.qml
+        QML_FILES screens/ClusterScreen.qml
+        QML_FILES screens/CarPlayScreen.qml
+        QML_FILES screens/BluetoothScreen.qml
+        QML_FILES screens/VehicleStatusScreen.qml
+
+        QML_FILES
+        QML_FILES components/SpeedGauge.qml
+        QML_FILES components/RpmGauge.qml
+        QML_FILES components/FuelGauge.qml
+        QML_FILES components/GaugeNeedle.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

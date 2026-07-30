@@ -65,7 +65,7 @@ Window {
             var coolentTempPosX = centerX - 50;
 
             ctx.beginPath();
-            
+
             for(var i = 0; i < 40; i++)
             {
                 var pos = (135 + (i / 40) * 270) * Math.PI / 180;
@@ -106,38 +106,38 @@ Window {
         onRpmChanged: requestPaint()
 
         onPaint: {
-            var centerX = width / 2;
-            var centerY = height / 2;
+            var centerX = width / 2
+            var centerY = height / 2
 
-            var ctx = getContext("2d");
+            var ctx = getContext("2d")
 
             var gaugeStartAng = 135 * Math.PI / 180;
-            var gaugeEndAng = (135 + (rpm / 8000) * 270) * Math.PI / 180;
+            var gaugeEndAng = (135 + (rpm / 8000) * 270) * Math.PI / 180
 
-            ctx.clearRect(0, 0, width, height);
-            ctx.beginPath();
-            ctx.strokeStyle = Qt.rgba(0.2, 1, 0.8, 1);
-            ctx.lineWidth = 10;
-            ctx.arc(centerX, centerY, 105, gaugeStartAng, gaugeEndAng, false);
-            ctx.stroke();
+            ctx.clearRect(0, 0, width, height)
+            ctx.beginPath()
+            ctx.strokeStyle = Qt.rgba(0.2, 1, 0.8, 1)
+            ctx.lineWidth = 10
+            ctx.arc(centerX, centerY, 105, gaugeStartAng, gaugeEndAng, false)
+            ctx.stroke()
 
-            ctx.beginPath();
-            var tipX = centerX + 90 * Math.cos(gaugeEndAng);
-            var tipY = centerY + 90 * Math.sin(gaugeEndAng);
+            ctx.beginPath()
+            var tipX = centerX + 90 * Math.cos(gaugeEndAng)
+            var tipY = centerY + 90 * Math.sin(gaugeEndAng)
 
             var baseWidth = 5;
 
-            var leftX = centerX + baseWidth * Math.cos(gaugeEndAng + Math.PI / 2);
-            var leftY = centerY + baseWidth * Math.sin(gaugeEndAng + Math.PI / 2);
-            var rightX = centerX + baseWidth * Math.cos(gaugeEndAng - Math.PI / 2);
-            var rightY = centerY + baseWidth * Math.sin(gaugeEndAng - Math.PI / 2);
+            var leftX = centerX + baseWidth * Math.cos(gaugeEndAng + Math.PI / 2)
+            var leftY = centerY + baseWidth * Math.sin(gaugeEndAng + Math.PI / 2)
+            var rightX = centerX + baseWidth * Math.cos(gaugeEndAng - Math.PI / 2)
+            var rightY = centerY + baseWidth * Math.sin(gaugeEndAng - Math.PI / 2)
 
-            ctx.moveTo(tipX, tipY);
-            ctx.lineTo(rightX, rightY);
-            ctx.lineTo(leftX, leftY);
-            ctx.closePath();
-            ctx.fillStyle = "red";
-            ctx.fill();
+            ctx.moveTo(tipX, tipY)
+            ctx.lineTo(rightX, rightY)
+            ctx.lineTo(leftX, leftY)
+            ctx.closePath()
+            ctx.fillStyle = "red"
+            ctx.fill()
         }
     }
 
