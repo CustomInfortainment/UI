@@ -16,6 +16,7 @@ qt_add_qml_module(appInstrument_Cluster
     URI Instrument_Cluster
     QML_FILES
         Main.qml
+        QML_FILES ClusterScreen.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
