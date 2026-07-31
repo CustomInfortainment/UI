@@ -63,16 +63,24 @@ Item {
             ctx.fill()
         }
     }
+    
     Canvas {
         id: gaugeBackground3
         width: 200; height: 200
+        
+        property real tickRangeStartAng = 
+        property real tickRangeEndAng = 
+        
         onPaint: {
             var ctx = getContext("2d")
 
             var startDeg = startAng
             var endDeg = endAng
 
-            var startAng =
+            var startRad = startDeg * Math.PI / 180
+            var endRad = endDeg * Math.PI / 180
+            
+            var tickPosX = 
         }
     }
 
