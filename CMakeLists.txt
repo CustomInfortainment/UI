@@ -28,6 +28,7 @@ qt_add_qml_module(appInstrument_Cluster
         QML_FILES components/RpmGauge.qml
         QML_FILES components/FuelGauge.qml
         QML_FILES components/GaugeNeedle.qml
+        QML_FILES theme.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

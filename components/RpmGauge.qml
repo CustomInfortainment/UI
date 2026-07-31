@@ -7,6 +7,12 @@ Item {
     property real rpmValue
     property real maxRpm
 
+    //게이지 범위
+    property real startAng
+    property real endAng
+
+    property real needleMoveRange
+
     //게이지 배경
     Canvas {
         id: gaugeBackground
@@ -14,8 +20,8 @@ Item {
         onPaint: {
             var ctx = getContext("2d")
 
-            var startDeg = 0
-            var endDeg = 270
+            var startDeg = startAng
+            var endDeg = endAng
 
             var startRad = startDeg * Math.PI / 180
             var endRad = endDeg * Math.PI / 180
@@ -35,8 +41,8 @@ Item {
         onPaint: {
             var ctx = getContext("2d")
 
-            var startDeg = 0
-            var endDeg = 270
+            var startDeg = startAng
+            var endDeg = endAng
 
             var startRad = startDeg * Math.PI / 180
             var endRad = endDeg * Math.PI / 180
@@ -55,11 +61,11 @@ Item {
             var ctx = getContext("2d")
             ctx.clearRect(0, 0, width, height)
 
-            var startDeg = 0
-            var endDeg = 270
+            var startDeg = startAng
+            var endDeg = endAng
 
             var startRad = startDeg * Math.PI / 180
-            var endRad = (startDeg + (rpmgauge.rpmValue / rpmgauge.maxRpm) * endDeg) * Math.PI / 180
+            var endRad = (startDeg + (rpmgauge.rpmValue / rpmgauge.maxRpm) * needleMoveRange) * Math.PI / 180
 
             var needleRange = 90
 

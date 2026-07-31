@@ -41,6 +41,18 @@ Window {
                     }
                 }
             }
+
+            states: State {
+                name: "clusterHighlight"; when: rpmgauge.rpmValue > 5000
+                PropertyChanges {
+
+
+                }
+            }
+
+            transitions: Transition {
+
+            }
         }
 
         RpmGauge {
@@ -48,6 +60,11 @@ Window {
             anchors.centerIn: parent
             rpmValue: 0
             maxRpm: 8000
+
+            startAng: 140
+            endAng: 40
+
+            needleMoveRange: 240
         }
 
         Grid {
